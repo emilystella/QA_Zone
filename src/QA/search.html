@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>搜索</title>
+
+</head>
+ 
+
+<body>
+<!-- <body bgcolor="pink"> -->
+<fieldset>
+ 
+
+<label for="search"> <strong>有趣的灵魂，搜索一下，MXMX为你解答！</strong></label>
+<input type="text" id="textId" value="" placeholder="请输入你感兴趣的问题" style="width:245px;"/>
+<input type="button" value="搜索" onclick="goto()" style="font-size:14px;"/>
+<script>
+function goto() {
+    var str = document.getElementById("textId").value;
+    window.open(str+".html");
+}
+</script>
+
+<br />
+<iframe src="index.html" name="iframe" width="1490" height="800"></iframe><br>
+</fieldset>
+</body>
+</html>
